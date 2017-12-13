@@ -1,0 +1,856 @@
+2017-12-13 11:33:46,628 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'connector'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:33:46,910 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-12-13 11:33:47,200 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-12-13 11:33:47,605 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-12-13 11:33:47,605 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2017-12-13 11:33:48,128 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4a9e6faf: startup date [Wed Dec 13 11:33:48 PST 2017]; root of context hierarchy
+2017-12-13 11:33:51,192 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-12-13 11:33:53,486 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-12-13 11:33:54,148 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx2.log
+2017-12-13 11:33:54,179 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx2.log
+2017-12-13 11:33:54,353 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-12-13 11:33:54,364 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: javaflowFlow
+2017-12-13 11:33:54,364 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@32a2a6be
+2017-12-13 11:33:54,402 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: javaflowFlow.stage1
+2017-12-13 11:33:54,423 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1135555866
+2017-12-13 11:33:54,917 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:33:54,918 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:33:54,924 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'connector'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:33:54,928 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-12-13 11:33:54,929 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-12-13 11:33:54,994 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2017-12-13 11:33:54,999 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:33:55,001 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-12-13 11:33:55,004 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: javaflowFlow
+2017-12-13 11:33:55,005 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: javaflowFlow.stage1
+2017-12-13 11:33:55,016 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1135555866
+2017-12-13 11:33:55,095 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-12-13 11:33:55,129 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: connector                                             *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-12-13 11:34:02,903 [[connector].HTTP_Listener_Configuration.worker.01] ERROR org.mule.exception.DefaultMessagingExceptionStrategy - 
+********************************************************************************
+Message               : Failed to find entry point for component, the following resolvers tried but failed: [
+ReflectionEntryPointResolver: Could not find entry point on: "com.connector.MainClass" with arguments: "{}"
+MethodHeaderPropertyEntryPointResolver: The required property "method" is not set on the event
+AnnotatedEntryPointResolver: Component: com.connector.MainClass@27ea71f9 doesn't have any annotated methods, skipping.
+CallableEntryPointResolver: Object "com.connector.MainClass@27ea71f9" does not implement required interface "interface org.mule.api.lifecycle.Callable"
+]
+Payload               : {NullPayload}
+Payload Type          : org.mule.transport.NullPayload
+Element               : /javaflowFlow/processors/0 @ connector:javaflow.xml:12 (Java)
+Element XML           : <component class="com.connector.MainClass" doc:name="Java"></component>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+org.mule.model.resolvers.EntryPointNotFoundException: Failed to find entry point for component, the following resolvers tried but failed: [
+ReflectionEntryPointResolver: Could not find entry point on: "com.connector.MainClass" with arguments: "{}"
+MethodHeaderPropertyEntryPointResolver: The required property "method" is not set on the event
+AnnotatedEntryPointResolver: Component: com.connector.MainClass@27ea71f9 doesn't have any annotated methods, skipping.
+CallableEntryPointResolver: Object "com.connector.MainClass@27ea71f9" does not implement required interface "interface org.mule.api.lifecycle.Callable"
+]
+	at org.mule.model.resolvers.DefaultEntryPointResolverSet.invoke(DefaultEntryPointResolverSet.java:49)
+	at org.mule.component.DefaultComponentLifecycleAdapter.invoke(DefaultComponentLifecycleAdapter.java:346)
+	at org.mule.component.AbstractJavaComponent.invokeComponentInstance(AbstractJavaComponent.java:82)
+	at org.mule.component.AbstractJavaComponent.doInvoke(AbstractJavaComponent.java:73)
+	at org.mule.component.AbstractComponent.invokeInternal(AbstractComponent.java:120)
+	at org.mule.component.AbstractComponent.access$000(AbstractComponent.java:55)
+	at org.mule.component.AbstractComponent$1$1.process(AbstractComponent.java:236)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.component.AbstractComponent.process(AbstractComponent.java:154)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.process(AsyncInterceptingMessageProcessor.java:110)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.construct.DynamicPipelineMessageProcessor.process(DynamicPipelineMessageProcessor.java:55)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:48)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractFilteringMessageProcessor.process(AbstractFilteringMessageProcessor.java:52)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.processBlocking(AbstractRequestResponseMessageProcessor.java:57)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:48)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.construct.AbstractPipeline$3.process(AbstractPipeline.java:232)
+	at org.mule.module.http.internal.listener.HttpMessageProcessorTemplate.routeEvent(HttpMessageProcessorTemplate.java:73)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:73)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:60)
+	at org.mule.execution.ExecuteCallbackInterceptor.execute(ExecuteCallbackInterceptor.java:16)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:35)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:22)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:30)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:14)
+	at org.mule.execution.BeginAndResolveTransactionInterceptor.execute(BeginAndResolveTransactionInterceptor.java:67)
+	at org.mule.execution.ResolvePreviousTransactionInterceptor.execute(ResolvePreviousTransactionInterceptor.java:44)
+	at org.mule.execution.SuspendXaTransactionInterceptor.execute(SuspendXaTransactionInterceptor.java:50)
+	at org.mule.execution.ValidateTransactionalStateInterceptor.execute(ValidateTransactionalStateInterceptor.java:40)
+	at org.mule.execution.IsolateCurrentTransactionInterceptor.execute(IsolateCurrentTransactionInterceptor.java:41)
+	at org.mule.execution.ExternalTransactionInterceptor.execute(ExternalTransactionInterceptor.java:48)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:28)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:13)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:110)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:59)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:36)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:69)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:187)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:58)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:93)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:49)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:112)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:39)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.process(PhaseExecutionEngine.java:114)
+	at org.mule.execution.PhaseExecutionEngine.process(PhaseExecutionEngine.java:41)
+	at org.mule.execution.MuleMessageProcessingManager.processMessage(MuleMessageProcessingManager.java:32)
+	at org.mule.module.http.internal.listener.DefaultHttpListener$1.handleRequest(DefaultHttpListener.java:135)
+	at org.mule.module.http.internal.listener.grizzly.GrizzlyRequestDispatcherFilter.handleRead(GrizzlyRequestDispatcherFilter.java:100)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:539)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.run0(ExecutorPerServerAddressIOStrategy.java:119)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.access$100(ExecutorPerServerAddressIOStrategy.java:31)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy$WorkerThreadRunnable.run(ExecutorPerServerAddressIOStrategy.java:142)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+********************************************************************************
+
+2017-12-13 11:34:03,093 [[connector].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/favicon.ico
+2017-12-13 11:34:03,093 [[connector].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [(*)/test/]
+2017-12-13 11:34:49,995 [[connector].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/sendingGetRequest
+2017-12-13 11:34:49,995 [[connector].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [(*)/test/]
+2017-12-13 11:34:53,917 [[connector].HTTP_Listener_Configuration.worker.01] ERROR org.mule.exception.DefaultMessagingExceptionStrategy - 
+********************************************************************************
+Message               : Failed to find entry point for component, the following resolvers tried but failed: [
+ReflectionEntryPointResolver: Could not find entry point on: "com.connector.MainClass" with arguments: "{}"
+MethodHeaderPropertyEntryPointResolver: The required property "method" is not set on the event
+AnnotatedEntryPointResolver: Component: com.connector.MainClass@62525ca9 doesn't have any annotated methods, skipping.
+CallableEntryPointResolver: Object "com.connector.MainClass@62525ca9" does not implement required interface "interface org.mule.api.lifecycle.Callable"
+]
+Payload               : {NullPayload}
+Payload Type          : org.mule.transport.NullPayload
+Element               : /javaflowFlow/processors/0 @ connector:javaflow.xml:12 (Java)
+Element XML           : <component class="com.connector.MainClass" doc:name="Java"></component>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+org.mule.model.resolvers.EntryPointNotFoundException: Failed to find entry point for component, the following resolvers tried but failed: [
+ReflectionEntryPointResolver: Could not find entry point on: "com.connector.MainClass" with arguments: "{}"
+MethodHeaderPropertyEntryPointResolver: The required property "method" is not set on the event
+AnnotatedEntryPointResolver: Component: com.connector.MainClass@62525ca9 doesn't have any annotated methods, skipping.
+CallableEntryPointResolver: Object "com.connector.MainClass@62525ca9" does not implement required interface "interface org.mule.api.lifecycle.Callable"
+]
+	at org.mule.model.resolvers.DefaultEntryPointResolverSet.invoke(DefaultEntryPointResolverSet.java:49)
+	at org.mule.component.DefaultComponentLifecycleAdapter.invoke(DefaultComponentLifecycleAdapter.java:346)
+	at org.mule.component.AbstractJavaComponent.invokeComponentInstance(AbstractJavaComponent.java:82)
+	at org.mule.component.AbstractJavaComponent.doInvoke(AbstractJavaComponent.java:73)
+	at org.mule.component.AbstractComponent.invokeInternal(AbstractComponent.java:120)
+	at org.mule.component.AbstractComponent.access$000(AbstractComponent.java:55)
+	at org.mule.component.AbstractComponent$1$1.process(AbstractComponent.java:236)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.component.AbstractComponent.process(AbstractComponent.java:154)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.process(AsyncInterceptingMessageProcessor.java:110)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.construct.DynamicPipelineMessageProcessor.process(DynamicPipelineMessageProcessor.java:55)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:48)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractFilteringMessageProcessor.process(AbstractFilteringMessageProcessor.java:52)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.processBlocking(AbstractRequestResponseMessageProcessor.java:57)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:48)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.construct.AbstractPipeline$3.process(AbstractPipeline.java:232)
+	at org.mule.module.http.internal.listener.HttpMessageProcessorTemplate.routeEvent(HttpMessageProcessorTemplate.java:73)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:73)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:60)
+	at org.mule.execution.ExecuteCallbackInterceptor.execute(ExecuteCallbackInterceptor.java:16)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:35)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:22)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:30)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:14)
+	at org.mule.execution.BeginAndResolveTransactionInterceptor.execute(BeginAndResolveTransactionInterceptor.java:67)
+	at org.mule.execution.ResolvePreviousTransactionInterceptor.execute(ResolvePreviousTransactionInterceptor.java:44)
+	at org.mule.execution.SuspendXaTransactionInterceptor.execute(SuspendXaTransactionInterceptor.java:50)
+	at org.mule.execution.ValidateTransactionalStateInterceptor.execute(ValidateTransactionalStateInterceptor.java:40)
+	at org.mule.execution.IsolateCurrentTransactionInterceptor.execute(IsolateCurrentTransactionInterceptor.java:41)
+	at org.mule.execution.ExternalTransactionInterceptor.execute(ExternalTransactionInterceptor.java:48)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:28)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:13)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:110)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:59)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:36)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:69)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:187)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:58)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:93)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:49)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:112)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:39)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.process(PhaseExecutionEngine.java:114)
+	at org.mule.execution.PhaseExecutionEngine.process(PhaseExecutionEngine.java:41)
+	at org.mule.execution.MuleMessageProcessingManager.processMessage(MuleMessageProcessingManager.java:32)
+	at org.mule.module.http.internal.listener.DefaultHttpListener$1.handleRequest(DefaultHttpListener.java:135)
+	at org.mule.module.http.internal.listener.grizzly.GrizzlyRequestDispatcherFilter.handleRead(GrizzlyRequestDispatcherFilter.java:100)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:539)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.run0(ExecutorPerServerAddressIOStrategy.java:119)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.access$100(ExecutorPerServerAddressIOStrategy.java:31)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy$WorkerThreadRunnable.run(ExecutorPerServerAddressIOStrategy.java:142)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+********************************************************************************
+
+2017-12-13 11:35:40,305 [[connector].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/
+2017-12-13 11:35:40,305 [[connector].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [(*)/test/]
+2017-12-13 11:37:48,450 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'connector'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:37:48,620 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-12-13 11:37:48,815 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-12-13 11:37:48,972 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-12-13 11:37:48,972 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2017-12-13 11:37:49,065 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4a9e6faf: startup date [Wed Dec 13 11:37:49 PST 2017]; root of context hierarchy
+2017-12-13 11:37:50,911 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-12-13 11:37:52,180 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-12-13 11:37:52,582 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx2.log
+2017-12-13 11:37:52,600 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx2.log
+2017-12-13 11:37:52,745 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-12-13 11:37:52,751 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: javaflowFlow
+2017-12-13 11:37:52,751 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3c9c6245
+2017-12-13 11:37:52,803 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: javaflowFlow.stage1
+2017-12-13 11:37:52,822 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1135555866
+2017-12-13 11:37:53,317 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:37:53,317 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:37:53,325 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'connector'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:37:53,329 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-12-13 11:37:53,329 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-12-13 11:37:53,377 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2017-12-13 11:37:53,385 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:37:53,387 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-12-13 11:37:53,389 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: javaflowFlow
+2017-12-13 11:37:53,390 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: javaflowFlow.stage1
+2017-12-13 11:37:53,396 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1135555866
+2017-12-13 11:37:53,460 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-12-13 11:37:53,481 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: connector                                             *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-12-13 11:42:07,482 [[connector].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/test/asd
+2017-12-13 11:42:07,482 [[connector].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [(*)/test/]
+2017-12-13 11:43:02,901 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'connector'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:43:03,082 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-12-13 11:43:03,269 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-12-13 11:43:03,482 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-12-13 11:43:03,482 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2017-12-13 11:43:03,565 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4a9e6faf: startup date [Wed Dec 13 11:43:03 PST 2017]; root of context hierarchy
+2017-12-13 11:43:05,295 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-12-13 11:43:06,452 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-12-13 11:43:06,831 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx2.log
+2017-12-13 11:43:06,852 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx2.log
+2017-12-13 11:43:07,015 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-12-13 11:43:07,020 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: javaflowFlow
+2017-12-13 11:43:07,020 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3c9c6245
+2017-12-13 11:43:07,067 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: javaflowFlow.stage1
+2017-12-13 11:43:07,087 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1135555866
+2017-12-13 11:43:07,542 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:43:07,542 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:43:07,549 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'connector'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:43:07,552 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-12-13 11:43:07,552 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-12-13 11:43:07,600 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2017-12-13 11:43:07,605 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:43:07,606 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-12-13 11:43:07,608 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: javaflowFlow
+2017-12-13 11:43:07,610 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: javaflowFlow.stage1
+2017-12-13 11:43:07,619 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1135555866
+2017-12-13 11:43:07,665 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-12-13 11:43:07,698 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: connector                                             *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-12-13 11:49:07,242 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'connector'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:49:07,421 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-12-13 11:49:07,584 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-12-13 11:49:07,780 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-12-13 11:49:07,780 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2017-12-13 11:49:07,865 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4a9e6faf: startup date [Wed Dec 13 11:49:07 PST 2017]; root of context hierarchy
+2017-12-13 11:49:09,845 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-12-13 11:49:11,066 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-12-13 11:49:11,459 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx2.log
+2017-12-13 11:49:11,480 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx2.log
+2017-12-13 11:49:11,612 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-12-13 11:49:11,617 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: javaflowFlow
+2017-12-13 11:49:11,617 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3c9c6245
+2017-12-13 11:49:11,672 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: javaflowFlow.stage1
+2017-12-13 11:49:11,687 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1135555866
+2017-12-13 11:49:12,194 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:49:12,194 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:49:12,200 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'connector'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:49:12,204 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-12-13 11:49:12,204 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-12-13 11:49:12,267 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2017-12-13 11:49:12,272 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:49:12,273 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-12-13 11:49:12,275 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: javaflowFlow
+2017-12-13 11:49:12,275 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: javaflowFlow.stage1
+2017-12-13 11:49:12,281 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1135555866
+2017-12-13 11:49:12,349 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-12-13 11:49:12,371 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: connector                                             *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-12-13 11:49:43,960 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'connector'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:49:44,158 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-12-13 11:49:44,324 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-12-13 11:49:44,474 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-12-13 11:49:44,474 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2017-12-13 11:49:44,645 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4a9e6faf: startup date [Wed Dec 13 11:49:44 PST 2017]; root of context hierarchy
+2017-12-13 11:49:46,559 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-12-13 11:49:47,803 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-12-13 11:49:48,184 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx2.log
+2017-12-13 11:49:48,209 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx2.log
+2017-12-13 11:49:48,369 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-12-13 11:49:48,375 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: javaflowFlow
+2017-12-13 11:49:48,375 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3c9c6245
+2017-12-13 11:49:48,421 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: javaflowFlow.stage1
+2017-12-13 11:49:48,440 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1135555866
+2017-12-13 11:49:48,880 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:49:48,881 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:49:48,889 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'connector'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:49:48,894 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-12-13 11:49:48,894 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-12-13 11:49:48,958 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2017-12-13 11:49:48,962 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:49:48,964 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-12-13 11:49:48,965 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: javaflowFlow
+2017-12-13 11:49:48,966 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: javaflowFlow.stage1
+2017-12-13 11:49:48,971 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1135555866
+2017-12-13 11:49:49,040 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-12-13 11:49:49,061 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: connector                                             *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-12-13 11:51:03,170 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'connector'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:51:03,375 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-12-13 11:51:03,532 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-12-13 11:51:03,729 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-12-13 11:51:03,729 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2017-12-13 11:51:03,807 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4a9e6faf: startup date [Wed Dec 13 11:51:03 PST 2017]; root of context hierarchy
+2017-12-13 11:51:05,584 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-12-13 11:51:06,772 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-12-13 11:51:07,130 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx2.log
+2017-12-13 11:51:07,145 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx2.log
+2017-12-13 11:51:07,303 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-12-13 11:51:07,308 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: javaflowFlow
+2017-12-13 11:51:07,308 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3c9c6245
+2017-12-13 11:51:07,345 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: javaflowFlow.stage1
+2017-12-13 11:51:07,355 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1135555866
+2017-12-13 11:51:07,842 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:51:07,842 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:51:07,850 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'connector'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:51:07,854 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-12-13 11:51:07,855 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-12-13 11:51:07,911 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2017-12-13 11:51:07,915 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:51:07,916 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-12-13 11:51:07,918 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: javaflowFlow
+2017-12-13 11:51:07,919 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: javaflowFlow.stage1
+2017-12-13 11:51:07,926 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1135555866
+2017-12-13 11:51:07,996 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-12-13 11:51:08,016 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: connector                                             *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-12-13 11:51:42,681 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'connector'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:51:42,885 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-12-13 11:51:43,076 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-12-13 11:51:43,243 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-12-13 11:51:43,243 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2017-12-13 11:51:43,317 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4a9e6faf: startup date [Wed Dec 13 11:51:43 PST 2017]; root of context hierarchy
+2017-12-13 11:51:45,172 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-12-13 11:51:46,255 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-12-13 11:51:46,627 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx2.log
+2017-12-13 11:51:46,646 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx2.log
+2017-12-13 11:51:46,832 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-12-13 11:51:46,837 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: javaflowFlow
+2017-12-13 11:51:46,837 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3c9c6245
+2017-12-13 11:51:46,890 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: javaflowFlow.stage1
+2017-12-13 11:51:46,906 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1135555866
+2017-12-13 11:51:47,349 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:51:47,349 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:51:47,355 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'connector'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:51:47,359 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-12-13 11:51:47,359 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-12-13 11:51:47,414 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2017-12-13 11:51:47,422 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:51:47,423 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-12-13 11:51:47,426 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: javaflowFlow
+2017-12-13 11:51:47,427 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: javaflowFlow.stage1
+2017-12-13 11:51:47,431 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1135555866
+2017-12-13 11:51:47,493 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-12-13 11:51:47,515 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: connector                                             *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-12-13 11:52:41,319 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'connector'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:52:41,504 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-12-13 11:52:41,672 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-12-13 11:52:41,858 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-12-13 11:52:41,858 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2017-12-13 11:52:41,932 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4a9e6faf: startup date [Wed Dec 13 11:52:41 PST 2017]; root of context hierarchy
+2017-12-13 11:52:43,715 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-12-13 11:52:44,885 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-12-13 11:52:45,267 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx2.log
+2017-12-13 11:52:45,283 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx2.log
+2017-12-13 11:52:45,436 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-12-13 11:52:45,442 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: javaflowFlow
+2017-12-13 11:52:45,443 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3c9c6245
+2017-12-13 11:52:45,488 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: javaflowFlow.stage1
+2017-12-13 11:52:45,500 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1135555866
+2017-12-13 11:52:45,992 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:52:45,992 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:52:46,000 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'connector'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:52:46,005 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-12-13 11:52:46,005 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-12-13 11:52:46,051 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2017-12-13 11:52:46,055 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:52:46,057 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-12-13 11:52:46,059 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: javaflowFlow
+2017-12-13 11:52:46,059 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: javaflowFlow.stage1
+2017-12-13 11:52:46,070 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1135555866
+2017-12-13 11:52:46,127 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-12-13 11:52:46,154 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: connector                                             *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-12-13 11:53:06,797 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'connector'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:53:06,973 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-12-13 11:53:07,114 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-12-13 11:53:07,294 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-12-13 11:53:07,295 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2017-12-13 11:53:07,371 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4a9e6faf: startup date [Wed Dec 13 11:53:07 PST 2017]; root of context hierarchy
+2017-12-13 11:53:09,162 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-12-13 11:53:10,372 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-12-13 11:53:10,789 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx2.log
+2017-12-13 11:53:10,810 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx2.log
+2017-12-13 11:53:10,975 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-12-13 11:53:10,983 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: javaflowFlow
+2017-12-13 11:53:10,983 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3c9c6245
+2017-12-13 11:53:11,037 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: javaflowFlow.stage1
+2017-12-13 11:53:11,062 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1135555866
+2017-12-13 11:53:11,571 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:53:11,571 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:53:11,578 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'connector'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:53:11,581 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-12-13 11:53:11,581 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-12-13 11:53:11,631 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2017-12-13 11:53:11,641 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:53:11,643 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-12-13 11:53:11,646 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: javaflowFlow
+2017-12-13 11:53:11,647 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: javaflowFlow.stage1
+2017-12-13 11:53:11,653 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1135555866
+2017-12-13 11:53:11,737 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-12-13 11:53:11,767 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: connector                                             *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-12-13 11:54:10,453 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'connector'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:54:10,630 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-12-13 11:54:10,814 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-12-13 11:54:11,014 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-12-13 11:54:11,015 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2017-12-13 11:54:11,099 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4a9e6faf: startup date [Wed Dec 13 11:54:11 PST 2017]; root of context hierarchy
+2017-12-13 11:54:12,939 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-12-13 11:54:14,174 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-12-13 11:54:14,574 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx2.log
+2017-12-13 11:54:14,591 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx2.log
+2017-12-13 11:54:14,727 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-12-13 11:54:14,735 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: javaflowFlow
+2017-12-13 11:54:14,735 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3c9c6245
+2017-12-13 11:54:14,801 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: javaflowFlow.stage1
+2017-12-13 11:54:14,813 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1135555866
+2017-12-13 11:54:15,308 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:54:15,308 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:54:15,314 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'connector'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:54:15,318 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-12-13 11:54:15,318 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-12-13 11:54:15,363 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2017-12-13 11:54:15,368 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:54:15,369 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-12-13 11:54:15,372 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: javaflowFlow
+2017-12-13 11:54:15,374 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: javaflowFlow.stage1
+2017-12-13 11:54:15,382 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1135555866
+2017-12-13 11:54:15,447 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-12-13 11:54:15,467 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: connector                                             *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-12-13 11:57:13,460 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'connector'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:57:13,658 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-12-13 11:57:13,821 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-12-13 11:57:14,005 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-12-13 11:57:14,005 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2017-12-13 11:57:14,084 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4a9e6faf: startup date [Wed Dec 13 11:57:14 PST 2017]; root of context hierarchy
+2017-12-13 11:57:15,832 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-12-13 11:57:17,019 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-12-13 11:57:17,397 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx2.log
+2017-12-13 11:57:17,412 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx2.log
+2017-12-13 11:57:17,566 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-12-13 11:57:17,570 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: javaflowFlow
+2017-12-13 11:57:17,570 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3c9c6245
+2017-12-13 11:57:17,621 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: javaflowFlow.stage1
+2017-12-13 11:57:17,637 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1135555866
+2017-12-13 11:57:18,103 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:57:18,104 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:57:18,111 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'connector'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:57:18,115 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-12-13 11:57:18,115 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-12-13 11:57:18,161 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2017-12-13 11:57:18,166 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:57:18,168 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-12-13 11:57:18,173 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: javaflowFlow
+2017-12-13 11:57:18,174 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: javaflowFlow.stage1
+2017-12-13 11:57:18,179 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1135555866
+2017-12-13 11:57:18,240 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-12-13 11:57:18,260 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: connector                                             *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-12-13 11:59:25,148 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'connector'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:59:25,306 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-12-13 11:59:25,464 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-12-13 11:59:25,635 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-12-13 11:59:25,635 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2017-12-13 11:59:25,720 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4a9e6faf: startup date [Wed Dec 13 11:59:25 PST 2017]; root of context hierarchy
+2017-12-13 11:59:27,512 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-12-13 11:59:28,741 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-12-13 11:59:29,109 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx2.log
+2017-12-13 11:59:29,124 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx2.log
+2017-12-13 11:59:29,256 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-12-13 11:59:29,260 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: javaflowFlow
+2017-12-13 11:59:29,260 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3c9c6245
+2017-12-13 11:59:29,312 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: javaflowFlow.stage1
+2017-12-13 11:59:29,326 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1135555866
+2017-12-13 11:59:29,811 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:59:29,811 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-13 11:59:29,817 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'connector'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:59:29,821 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-12-13 11:59:29,821 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-12-13 11:59:29,873 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2017-12-13 11:59:29,883 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-13 11:59:29,884 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-12-13 11:59:29,886 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: javaflowFlow
+2017-12-13 11:59:29,886 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: javaflowFlow.stage1
+2017-12-13 11:59:29,893 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1135555866
+2017-12-13 11:59:29,955 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-12-13 11:59:29,978 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: connector                                             *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
