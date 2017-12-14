@@ -17,23 +17,19 @@ public class MainClass {
 	        Process p;
 	        BufferedReader is;
 	
-	        p = r.exec("python3 /home/fkiraz/planCodeAPI.py");
+	        //p = r.exec("/usr/bin/ps aux");
+	        p = r.exec("/usr/bin/python3", new String[]{"/home/fkiraz/planCodeAPI.py"});
 	        is = new BufferedReader(new InputStreamReader(p.getInputStream()));
-
-			System.out.println("RUNNING");
-			while ((line = is.readLine()) != null) {
-				System.out.println("RES " + result);
+	
+			while ((line = is.readLine()) != null)
 				  result += line;
-			}
-
-			System.out.println("WAITING");
+			
 	        try {
 	          p.waitFor();
 	        } catch (InterruptedException e) {
 	          System.err.println(e);
 	          return "";
 	        }
-			System.out.println("END");
 	        System.err.println("Process done, exit status was " + p.exitValue());
 		} catch (IOException e1) {
 			e1.printStackTrace();

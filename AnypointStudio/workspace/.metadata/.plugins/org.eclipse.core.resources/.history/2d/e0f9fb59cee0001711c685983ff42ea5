@@ -17,7 +17,8 @@ public class MainClass {
 	        Process p;
 	        BufferedReader is;
 	
-	        p = r.exec("python3 /home/fkiraz/planCodeAPI.py");
+	        //p = r.exec("/usr/bin/ps aux");
+	        p = r.exec("python3 /home/fkiraz/test.py");
 	        is = new BufferedReader(new InputStreamReader(p.getInputStream()));
 
 			System.out.println("RUNNING");
