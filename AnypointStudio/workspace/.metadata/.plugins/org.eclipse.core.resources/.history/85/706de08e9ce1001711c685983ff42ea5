@@ -34,6 +34,7 @@ public class MainClass {
 	          return "";
 	        }
 			System.out.println("END");
+	        System.err.println("Process done, exit status was " + p.exitValue());
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}

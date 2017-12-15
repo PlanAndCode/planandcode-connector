@@ -1290,3 +1290,53 @@ CallableEntryPointResolver: Object "com.connector.MainClass@62525ca9" does not i
 *   DevKit Extension Information                                     *
 *   Wrapper Manager                                                  *
 **********************************************************************
+2017-12-14 05:12:20,180 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'connector'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-14 05:12:20,410 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-12-14 05:12:20,618 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-12-14 05:12:20,846 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-12-14 05:12:20,847 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2017-12-14 05:12:20,943 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4a9e6faf: startup date [Thu Dec 14 05:12:20 PST 2017]; root of context hierarchy
+2017-12-14 05:12:23,048 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-12-14 05:12:24,409 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-12-14 05:12:24,826 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-tx-log/tx2.log
+2017-12-14 05:12:24,847 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx1.log and /home/fkiraz/AnypointStudio/workspace/.mule/./.mule/connector/queue-xa-tx-log/tx2.log
+2017-12-14 05:12:24,999 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-12-14 05:12:25,004 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: javaflowFlow
+2017-12-14 05:12:25,005 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3c9c6245
+2017-12-14 05:12:25,066 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: javaflowFlow.stage1
+2017-12-14 05:12:25,084 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1135555866
+2017-12-14 05:12:25,699 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-14 05:12:25,699 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/connector.xml'}, ConfigResource{resourceName='/home/fkiraz/AnypointStudio/workspace/.mule/apps/connector/javaflow.xml'}]"
+2017-12-14 05:12:25,706 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'connector'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-14 05:12:25,711 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-12-14 05:12:25,712 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-12-14 05:12:25,776 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081
+2017-12-14 05:12:25,783 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-14 05:12:25,785 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-12-14 05:12:25,788 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: javaflowFlow
+2017-12-14 05:12:25,789 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: javaflowFlow.stage1
+2017-12-14 05:12:25,796 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1135555866
+2017-12-14 05:12:25,875 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-12-14 05:12:25,908 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: connector                                             *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-12-15 05:24:31,318 [[connector].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/favicon.ico
+2017-12-15 05:24:31,319 [[connector].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [(*)/test/]
