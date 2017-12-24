@@ -10,14 +10,14 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>.link0</name>
+			<name>.link2</name>
 			<type>2</type>
-			<location>/home/fkiraz/Desktop/AnypointStudio/plugins/org.mule.tooling.server.3.9.0.ee_6.4.1.201710111930/mule/lib/mule/per-app</location>
+			<location>/home/fkiraz/Desktop/AnypointStudio/plugins/org.mule.tooling.server.3.9.0.ee_6.4.2.201712051241/mule/lib/mule/per-app</location>
 		</link>
 		<link>
-			<name>.link1</name>
+			<name>.link3</name>
 			<type>2</type>
-			<location>/home/fkiraz/Desktop/AnypointStudio/plugins/org.mule.tooling.server.3.9.0.ee_6.4.1.201710111930/mule/plugins/data-mapper-plugin/classes</location>
+			<location>/home/fkiraz/Desktop/AnypointStudio/plugins/org.mule.tooling.server.3.9.0.ee_6.4.2.201712051241/mule/plugins/data-mapper-plugin/classes</location>
 		</link>
 	</linkedResources>
 </projectDescription>

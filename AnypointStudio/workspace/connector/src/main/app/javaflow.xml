@@ -6,9 +6,13 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
-    <http:listener-config name="HTTP_Listener_Configuration" host="localhost" port="8081" doc:name="HTTP Listener Configuration"/>
+    <http:listener-config name="HTTP_Listener_Configuration" host="localhost" port="3000" doc:name="HTTP Listener Configuration"/>
+    <flow name="javaflowFlow1">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/Get1" doc:name="HTTP"/>
+        <component class="com.connector.Get1" doc:name="Java"/>
+    </flow>
     <flow name="javaflowFlow">
-        <http:listener config-ref="HTTP_Listener_Configuration" path="/test" doc:name="HTTP"/>
-        <component class="com.connector.MainClass" doc:name="Java"/>
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/Get2" doc:name="HTTP"/>
+        <component class="com.connector.Get2" doc:name="Java"/>
     </flow>
 </mule>
